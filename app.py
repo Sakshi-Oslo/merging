@@ -2,7 +2,7 @@
 # from PyPDF2 import PdfMerger
 
 # app= Flask(__name__, template_folder="templates", static_folder="static")
-@app.route('/', methods=['GET', 'POST'])
+# @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'GET':
         return render_template("index.html")
@@ -20,5 +20,5 @@ def index():
         merger.write("merged-pdf.pdf")
         merger.close()
         return send_file("merged-pdf.pdf", as_attachment= True)
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
