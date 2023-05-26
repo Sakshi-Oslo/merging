@@ -1,5 +1,5 @@
-from flask import Flask, request, send_file, render_template
-from PyPDF2 import PdfMerger
+# from flask import Flask, request, send_file, render_template
+# from PyPDF2 import PdfMerger
 
 app= Flask(__name__, template_folder="templates", static_folder="static")
 @app.route('/', methods=['GET', 'POST'])
